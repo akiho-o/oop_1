@@ -1,20 +1,23 @@
 <?php
 
+require_once __DIR__ . '/Car.class.php';
+
 // 以下を実行した時にエラーがでないようにして下さい。
 // Carクラスのインスタンスを生成
 // 引数 : 車名(車種)、車体番号、カラー
+
 $car1 = new Car('ランクル', 100, 'black');
 
 // 車名(車種)を取得
-echo $car1->getName();
+echo $car1->getName($car_name);
 echo "\n";
 
 // 車体番号を取得
-echo $car1->getNumber();
+echo $car1->getNumber($number);
 echo "\n";
 
 // カラーを取得
-echo $car1->getColor();
+echo $car1->getColor($color);
 echo "\n";
 
 // 車の情報を表示
