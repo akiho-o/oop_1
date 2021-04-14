@@ -2,19 +2,19 @@
 
 class Car
 {
-    private $car_name;
+    private $name;
     private $number;
     private $color;
-    public function __construct($car_name, $number, $color)
+    public function __construct($name, $number, $color)
     {
-        $this->car_name = $car_name;
+        $this->name = $name;
         $this->number = $number;
         $this->color = $color;
     }
     
     public function getName()
     {
-        return $this->car_name;
+        return $this->name;
     }
     public function getNumber()
     {
@@ -24,9 +24,9 @@ class Car
     {
         return $this->color;
     }
-    public function setName($car_name)
+    public function setName($name)
     {
-        $this->car_name = $car_name;
+        $this->name = $name;
     }
         public function setNumber($number)
     {
@@ -39,7 +39,7 @@ class Car
 
     public function information()
     {
-        return "車の車種:" . $this->car_name . "\n" .
+        return "車の車種:" . $this->name . "\n" .
                 "車体番号:" . $this->number . "\n" . 
                 "カラー:" . $this->color . "\n" ;
     }

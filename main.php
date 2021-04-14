@@ -9,15 +9,15 @@ require_once __DIR__ . '/Car.class.php';
 $car1 = new Car('ランクル', 100, 'black');
 
 // 車名(車種)を取得
-echo $car1->getName($car_name);
+echo $car1->getName();
 echo "\n";
 
 // 車体番号を取得
-echo $car1->getNumber($number);
+echo $car1->getNumber();
 echo "\n";
 
 // カラーを取得
-echo $car1->getColor($color);
+echo $car1->getColor();
 echo "\n";
 
 // 車の情報を表示
